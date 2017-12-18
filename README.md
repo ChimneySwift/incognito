@@ -37,6 +37,32 @@ This isn't going to be like any regular mod instalation, we're going to also hav
 7. You know the drill, press enter and add below that line: `if not minetest.get_modpath("incognito") then`
 8. Now navigate to the end of line 64 (should say `end`), press enter and type `end`
 
+By the end of all that, the code from and including line 45 to and including 65 should look like this:
+
+```Lua
+core.register_on_joinplayer(function(player)
+    if not minetest.get_modpath("incognito") then
+    local player_name = player:get_player_name()
+    player_list[player_name] = player
+    if not minetest.is_singleplayer() then
+        core.chat_send_all("*** " .. player_name .. " joined the game.")
+    end
+    end
+end)
+
+core.register_on_leaveplayer(function(player, timed_out)
+    if not minetest.get_modpath("incognito") then
+    local player_name = player:get_player_name()
+    player_list[player_name] = nil
+    local announcement = "*** " ..  player_name .. " left the game."
+    if timed_out then
+        announcement = announcement .. " (timed out)"
+    end
+    core.chat_send_all(announcement)
+    end
+end)
+```
+
 Of course now install the mod into the `mods` folder as normal, and you should be ready to rock and roll.
 
 Settings
