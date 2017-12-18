@@ -1,9 +1,10 @@
-# Incognito
+Incognito
+===
 
 Minetest mod that lets you become completely* invisible - even to server status.
 
 Description
-===
+---
 
 The issue with the available invisibility Minetest mods is they don't make you _completely_ invisible. Like sure you can't be seen, but what if it was as if you weren't even there, you can be playing the game, but also avoiding all of the annoying players begging for you to give them mese/gold/diamonds all day long.
 
@@ -24,7 +25,7 @@ A few things:
 That said, it's not all sunshine and rainbows, Clients are still sent your nametag and player position, so you'll show up in the minimap and .list_players if you're within nametag range, or if the client is using a 0.5.0-dev or above client.
 
 Installing
-===
+---
 
 This isn't going to be like any regular mod instalation, we're going to also have to modify a built-in mod to get it to work properly, don't worry, it's fairly simple ;)
 
@@ -66,7 +67,7 @@ end)
 Of course now install the mod into the `mods` folder as normal, and you should be ready to rock and roll.
 
 Settings
-===
+---
 
 There are a couple of setting which might be of interest of course:
 
@@ -75,6 +76,6 @@ There are a couple of setting which might be of interest of course:
 - On line 3 of `init.lua` you'll find a variable called `PLAYERRANGE`, set this one to how many nodes as a radius you want to search for other players (if they are in the radius a warning HUD will pop up), the default is `100`, and we wouldn't recomend setting it too high because you'll probably end up with a fair amount of load on your server.
 
 Notes
-===
+---
 
 - This mod is still a work-in-progress, expect functionality to change slightly, if you have any improvements, please feel free to creat an GitHub issue, create a Pull Request or comment on the Minetest Forums (forum.minetest.net)
