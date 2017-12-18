@@ -23,7 +23,7 @@ A few things:
 - Makes you invisible to server status (Your name will no longer show up in the server status client list (viewable at login or via /status))
 - Supresses your ability to send public chat messages (Messages and messages sent with /me will be stopped, can't have you leaking the fact you're incognito ;)
 - Makes you silent (No footstep noises!)
-- Lets you know you're incognito (via a formspec)
+- Lets you know you're incognito (via a HUD)
 - Shows you a warning HUD if there are players nearby (so you don't go placing blocks or anything and blow your cover)
 
 That said, it's not all sunshine and rainbows, Clients are still sent your nametag and player position, so you'll show up in the minimap and .list_players if you're within nametag range, or if the client is using a 0.5.0-dev or above client.
