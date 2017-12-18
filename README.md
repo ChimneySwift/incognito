@@ -3,6 +3,10 @@ Incognito
 
 Minetest mod that lets you become completely* invisible - even to server status.
 
+![alt text](https://github.com/ChimneySwift/incognito/blob/master/screenshot.png?raw=true "What they see | What you see")
+
+**Code license:** [MIT](https://opensource.org/licenses/MIT)
+
 Description
 ---
 
